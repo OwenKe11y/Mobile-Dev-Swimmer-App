@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SwimSetRandomiser"
+             x:Class="SwimSetRandomiser.MainPage" 
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             android:TabbedPage.ToolbarPlacement="Bottom">
+
+    <!--Used to bring the toolbar on the bottom on android, No idea why it comes up as an erro-->
+
+    <!--Home Page-->
+    <local:Home Title="Home" Icon="Home.png">
+    </local:Home>
+
+    <!--Randomiser Page-->
+    <local:Randomiser Title="Randomiser" Icon="randomIcon.png">
+    </local:Randomiser>
+
+    <!--Stopwatch Page-->
+
+    <local:Watch Title="Stopwatch" Icon="stopwatch.png">
+        </local:Watch>
+</TabbedPage>

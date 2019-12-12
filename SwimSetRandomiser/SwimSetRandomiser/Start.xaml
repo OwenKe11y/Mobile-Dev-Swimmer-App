@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SwimSetRandomiser.Start"
+             BackgroundColor="Navy">
+             <!--xmlns:ui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.11.0"-->
+                                
+    <ContentPage.Content>
+        <!--Icon-->
+        <StackLayout  Margin="5">
+            <Image Source="images/IconMain.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" 
+                   WidthRequest="350"
+                   HeightRequest="200">
+            </Image>
+
+            <!--Logo Text-->
+            <Image Source="images/LogoText.png" 
+                   VerticalOptions="StartAndExpand"
+                   HorizontalOptions="CenterAndExpand">
+            </Image>
+
+
+            <!--Bring you to Home-->
+            <Button BorderRadius="20" Text="START!" 
+                    FontSize="Large" TextColor="Navy" BackgroundColor="White" 
+                    HorizontalOptions="CenterAndExpand" 
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="Button_ClickedStart"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

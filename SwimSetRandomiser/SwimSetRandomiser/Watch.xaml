@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SwimSetRandomiser.Watch"
+             BackgroundImage="images/background.png" >
+    <StackLayout Margin="5">
+    
+              
+
+        
+        <!--Time Display-->
+      <Label x:Name="labelStopwatch" FontSize="45" TextColor="DarkCyan" HorizontalOptions ="CenterAndExpand" VerticalOptions ="CenterAndExpand"></Label>
+        
+        <!--Start Button-->
+        <Button x:Name="btnStart" Text="Start" Clicked="btnStart_Clicked"  
+                FontSize="Large" Padding="10" BorderRadius="20"
+                BackgroundColor="White" Opacity="0.7" TextColor="DarkCyan" >
+        </Button>
+
+
+        <!--Stop Button-->
+        <Button x:Name="btnStop" Text="Stop" Clicked="btnStop_Clicked"
+                FontSize="Large" Padding="10" BorderRadius="20"
+               BackgroundColor="White" Opacity="0.7" TextColor="DarkCyan">
+        </Button>
+
+
+
+        <!--Reset Button-->
+        <Button x:Name="btnReset" Text="Reset" Clicked="btnReset_Clicked" 
+                FontSize="Large" Padding="10" BorderRadius="20"
+                BackgroundColor="White" Opacity="0.7" TextColor="DarkCyan">
+        </Button>
+
+    </StackLayout>
+</ContentPage>

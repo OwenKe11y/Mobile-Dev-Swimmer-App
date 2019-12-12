@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SwimSetRandomiser.Randomiser"
+
+             BackgroundImage="images/background.png">
+
+    <!--BAckground-->
+
+    <ContentPage.Content>
+        <StackLayout>
+
+            <!--Labels for Titles-->
+            <Grid x:Name="GrdTitle" BackgroundColor="White" Opacity="0.8"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  />
+                    <ColumnDefinition  />
+                    <ColumnDefinition  />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0" Text="Stroke" FontSize="20" TextColor="DarkCyan" 
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"></Label>
+                <Label Grid.Column="1" Grid.Row="0" Text="Distance(m)" FontSize="20" TextColor="DarkCyan" 
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"></Label>
+                <Label Grid.Column="2" Grid.Row="0" Text="No. of Sets" FontSize="20" TextColor="DarkCyan" 
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"></Label>
+            </Grid>
+
+
+            <!--Labels for Randomised Values-->
+
+            <!--#region All of the Grids for the Add Button Function-->
+            
+            <!--Labels for Randomised Values Number 1-->
+
+            <Grid x:Name="GrdRandom" BackgroundColor="White" Opacity="0.7" Margin="5" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  />
+                    <ColumnDefinition  />
+                    <ColumnDefinition  />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="75"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0" x:Name="strokeRandom" FontSize="20" TextColor="DarkCyan" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center"></Label>
+                <Label Grid.Column="1" Grid.Row="0" x:Name="distanceRandom" FontSize="30" TextColor="DarkCyan" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center"></Label>
+                <Label Grid.Column="2" Grid.Row="0" x:Name="setsRandom" FontSize="30" TextColor="DarkCyan" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center"></Label>
+            </Grid>
+
+            <!--Labels for Randomised Values Number 2-->
+            <Grid x:Name="AddOne" BackgroundColor="White" Opacity="0.7" Margin="5" IsVisible="False">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  />
+                    <ColumnDefinition  />
+                    <ColumnDefinition  />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="75"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Column="0" Grid.Row="0" x:Name="strokeRandom2" FontSize="20" TextColor="DarkCyan" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center"></Label>
+                <Label Grid.Column="1" Grid.Row="0" x:Name="distanceRandom2" FontSize="30" TextColor="DarkCyan" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center"></Label>
+                <Label Grid.Column="2" Grid.Row="0" x:Name="setsRandom2" FontSize="30" TextColor="DarkCyan" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center"></Label>
+            </Grid>
+
+            <!--Labels for Randomised Values Number 3-->
+            <Grid x:Name="AddTwo" BackgroundColor="White" Opacity="0.7" Margin="5" IsVisible="False">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  />
+                    <ColumnDefinition  />
+                    <ColumnDefinition  />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="75"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Column="0" Grid.Row="0" x:Name="strokeRandom3" FontSize="20" TextColor="DarkCyan" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center"></Label>
+                <Label Grid.Column="1" Grid.Row="0" x:Name="distanceRandom3" FontSize="30" TextColor="DarkCyan" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center"></Label>
+                <Label Grid.Column="2" Grid.Row="0" x:Name="setsRandom3" FontSize="30" TextColor="DarkCyan" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center"></Label>
+            </Grid>
+            <!--#endregion-->
+
+            <!--Buttons for Add Set-->
+            <StackLayout>
+                <Button BackgroundColor ="White" Opacity="0.7" Margin="5" Image="images/randomIconSmall.png"
+                    VerticalOptions="StartAndExpand" x:Name="AddBtn" IsVisible="True"
+                    Text ="Add a New Set" TextColor="DarkCyan" FontSize="30" BorderRadius="20"
+                    Clicked="Addbutton"
+                   ></Button>
+             </StackLayout>
+              
+           <!--Button for Randomiser-->
+            <Button BackgroundColor ="White" Opacity="0.7" Margin="5" Image="images/randomIconSmall.png"
+                    VerticalOptions="EndAndExpand"
+                    Text ="Randomise!" TextColor="DarkCyan" FontSize="30" BorderRadius="20"
+                    Clicked="Button_RandomClicked">
+            </Button>
+           
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
